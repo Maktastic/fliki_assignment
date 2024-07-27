@@ -9,7 +9,6 @@ import Loader from "@/components/Loader/Loader";
 import { ToastContainer } from 'react-toastify';
 import store from "@/app/store/Store";
 import {useAtom} from "jotai";
-// import AuthContext from "@/contexts/Auth/AuthContext";
 
 export default function Home() {
 

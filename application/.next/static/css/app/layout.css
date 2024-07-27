@@ -180,13 +180,13 @@
   margin: 0.5rem 0;
 }
 
-.product-card {
+.o-product-card {
   border: 0.5px solid;
   padding: 1rem;
   background: #FAFAFA;
   border-radius: 8px;
 }
-.product-card .product-price {
+.o-product-card .product-price {
   color: red;
 }
 
