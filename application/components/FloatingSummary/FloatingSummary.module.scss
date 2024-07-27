@@ -1,0 +1,16 @@
+
+
+.fs_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  
+  .checkout {
+    width: calc(100% - 10rem);
+  }
+}

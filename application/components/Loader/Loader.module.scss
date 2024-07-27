@@ -1,0 +1,41 @@
+
+.load-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+}
+
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: #f03355;
+  background: conic-gradient(currentColor 0 270deg,#0000 0);
+  border-radius: 50%;
+  animation: l14-0 4s infinite linear;
+}
+.loader::before {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 50%;
+  border-top-left-radius: 100px;
+  background: currentColor;
+  animation: l14 0.5s infinite alternate;
+}
+
+@keyframes l14-0 {
+  0%,24.99%  {transform: rotate(0deg)}
+  25%,49.99% {transform: rotate(90deg)}
+  50%,74.99% {transform: rotate(180deg)}
+  75%,100%   {transform: rotate(270deg)}
+}
+
+@keyframes l14 {
+  100%  {transform: translate(-10px,-10px)}
+}

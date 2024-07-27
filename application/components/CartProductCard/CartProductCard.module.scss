@@ -1,0 +1,19 @@
+
+
+.product-container {
+  padding: 1.5rem;
+  height: 100%;
+  font-size: 14px;
+  border-bottom: 0.5px solid #ccc;
+  
+  .p_name {
+    letter-spacing: 0.5px;
+  }
+  
+  .p_price {
+    justify-self: end;
+    color: red;
+    font-weight: bold;
+  }
+  
+}

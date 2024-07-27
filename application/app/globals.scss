@@ -1,0 +1,23 @@
+@import '../components/Header/Header.module';
+@import '../components/Loader/Loader.module';
+@import '../components/ProductCard/ProductCard.module';
+@import '../components/HeaderDropdown/HeaderDropdown.module';
+@import '../components/CartIcon/CartIcon.module';
+@import '../components/CartProductCard/CartProductCard.module';
+@import '../components/FloatingSummary/FloatingSummary.module';
+@import '../components/Login/LoginForm.module';
+@import '../components/OrderProductCard/OrderProductCard.module';
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+  "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

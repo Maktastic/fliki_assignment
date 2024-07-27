@@ -1,0 +1,46 @@
+
+.header {
+  width: 100%;
+  letter-spacing: 0.5px;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  margin-top: 8px;
+
+  .title {
+    font-weight: 600;
+  }
+  
+  .navigation {
+    
+    li {
+      list-style-type: none;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        color: mediumaquamarine;
+      }
+    }
+    
+  }
+  
+  .header-btn {
+    
+    .person-icon {
+      width: 20px;
+      &:hover {
+        scale: 1.1;
+        transition: all 300ms ease-in-out;
+      }
+    }
+    
+  }
+  
+  .cart-icon {
+    justify-self: flex-end!important;
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,36 @@
+services:
+  nextjs:
+    build:
+      context: ./application
+    container_name: app
+    volumes:
+      - ./application:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - express
+      - mongo
+
+  express:
+    build:
+      context: ./server
+    container_name: server
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
